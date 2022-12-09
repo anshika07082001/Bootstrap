@@ -1,0 +1,11 @@
+.fluid {
+    min-height: 900px;
+}
+.navbar {
+    min-height: 70px !important;
+}
+
+.bg-light {
+    border-bottom: 1px solid #dfdfdf;
+    background: white !important;
+}

@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="shopPage.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Body Top section -->
+    <header>
+      <!-- main Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <img class="ms-5" src="https://preview.colorlib.com/theme/abcbook/assets/img/logo/logo.png.webp" alt=""/>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <input placeholder='Search Book by author or publisher' class="rounded-pill ms-5 p-3 pe-5 border "/>
+              </li>
+            </ul>
+            <div class="navbar-text d-flex flex-row justify-content-center align-items-center">
+              <label class="nav-link me-5" href="#">FAQ</label>
+              <label class="nav-link disabled me-5" href="#">Track Order</label>
+              <i class="bi bi-cart me-5 text-dark">
+                <span class="badge--span red p-1 text-white rounded-circle text-align-center position-absolute">0</span>
+              </i>
+              <button class="rounded-pill me-5 red border-0 text-white p-3 pe-4 ps-4">Sign In</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Bottom navbar -->
+      <div class="fluid header-bottom header-sticky background">
+        <div class="container pt-3 pb-3">
+          <div class="d-flex flex-row justify-content-center align-item-center">
+            <label class="ms-5 fw-bold text-dark">Home</label>
+            <label class="ms-5 fw-bold text-dark">Categories</label>
+            <label class="ms-5 fw-bold text-dark">About</label>
+            <label class="ms-5 fw-bold text-dark">Pages</label>
+            <label class="ms-5 fw-bold text-dark">Blog</label>
+            <label class="ms-5 fw-bold text-dark">Contact</label>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Body Middle Section -->
+    <main>
+      <!-- main Crousel -->
+      <div class="fluid background">
+        <div class=" container">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="imgDiv d-flex flex-column justify-content-center align-items-center" style="background-image: url('https://preview.colorlib.com/theme/abcbook/assets/img/hero/h1_hero3.jpg.webp')" src="" class="d-block w-100">
+                  <button class="border-0 bg-white rounded-pill ">Science Fiction</button>
+                  <h1 class="fw-bolder text-white mt-3">the History of phipinio</h1>
+                  <button class="red border-0 rounded-pill p-3 ps-4 pe-4 text-white mt-3">Browser Store</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="imgDiv d-flex flex-column justify-content-center align-items-center" style="background-image: url('https://preview.colorlib.com/theme/abcbook/assets/img/hero/h1_hero1.jpg.webp')" src="" class="d-block w-100">
+                  <button class="border-0 bg-white rounded-pill ">Science Fiction</button>
+                  <h1 class="fw-bolder text-white mt-3">the History of phipinio</h1>
+                  <button class="red border-0 rounded-pill p-3 ps-4 pe-4 text-white mt-3">Browser Store</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="imgDiv d-flex flex-column justify-content-center align-items-center" style="background-image: url('https://preview.colorlib.com/theme/abcbook/assets/img/hero/h1_hero2.jpg.webp')" src="" class="d-block w-100">
+                  <button class="border-0 bg-white rounded-pill ">Science Fiction</button>
+                  <h1 class="fw-bolder text-white mt-3">the History of phipinio</h1>
+                  <button class="red border-0 rounded-pill p-3 ps-4 pe-4 text-white mt-3">Browser Store</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="container d-flex justify-content-center align-item-center">
+            <h2 class="p-5">Best Selling books Ever</h2>
+          </div>
+        </div>
+      </div>
+      <!-- div Crousel -->
+      <div class="fluid div--crousel ">
+        <div id="carouselDiv" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container d-flex flex-row justify-content-around align-items-center pb-5">
+                <div class="card rounded-0">
+                  <img class="cardImg" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling2.jpg.webp" alt=""/>
+                  <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+                    <label class="fs-4 fw-bold">Moon dance</label>
+                    <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+                    <div class="d-flex flex-row text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around align-items-center">
+                      <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                      <p class="text-danger ms-5 mt-3 fs-4">$50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card rounded-0">
+                  <img class="cardImg" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling3.jpg.webp" alt=""/>
+                  <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+                    <label class="fs-4 fw-bold">Moon dance</label>
+                    <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+                    <div class="d-flex flex-row text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around align-items-center">
+                      <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                      <p class="text-danger ms-5 mt-3 fs-4">$50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card rounded-0">
+                  <img class="cardImg" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling1.jpg.webp" alt=""/>
+                  <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+                    <label class="fs-4 fw-bold">Moon dance</label>
+                    <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+                    <div class="d-flex flex-row text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around align-items-center">
+                      <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                      <p class="text-danger ms-5 mt-3 fs-4">$50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card rounded-0">
+                  <img  class="cardImg" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling4.jpg.webp" alt=""/>
+                  <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+                    <label class="fs-4 fw-bold">Moon dance</label>
+                    <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+                    <div class="d-flex flex-row text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around align-items-center">
+                      <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                      <p class="text-danger ms-5 mt-3 fs-4">$50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card rounded-0">
+                  <img class="cardImg" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling6.jpg.webp" alt=""/>
+                  <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+                    <label class="fs-4 fw-bold">Moon dance</label>
+                    <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+                    <div class="d-flex flex-row text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around align-items-center">
+                      <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                      <p class="text-danger ms-5 mt-3 fs-4">$50</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="carousel-item ">
+            <div class="container d-flex flex-row justify-content-around align-items-center pb-5">
+              <div class="card rounded-0">
+                <img class="cardImg" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling2.jpg.webp" alt=""/>
+                <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+                  <label class="fs-4 fw-bold">Moon dance</label>
+                  <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+                    <div class="d-flex flex-row text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around align-items-center">
+                      <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                      <p class="text-danger ms-5 mt-3 fs-4">$50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card rounded-0">
+                  <img class="cardImg" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling3.jpg.webp" alt=""/>
+                  <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+                    <label class="fs-4 fw-bold">Moon dance</label>
+                    <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+                    <div class="d-flex flex-row text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around align-items-center">
+                      <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                      <p class="text-danger ms-5 mt-3 fs-4">$50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card rounded-0">
+                  <img class="cardImg" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling1.jpg.webp" alt=""/>
+                  <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+                    <label class="fs-4 fw-bold">Moon dance</label>
+                    <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+                    <div class="d-flex flex-row text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around align-items-center">
+                      <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                      <p class="text-danger ms-5 mt-3 fs-4">$50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card rounded-0">
+                  <img  class="cardImg" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling4.jpg.webp" alt=""/>
+                  <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+                    <label class="fs-4 fw-bold">Moon dance</label>
+                    <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+                    <div class="d-flex flex-row text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around align-items-center">
+                      <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                      <p class="text-danger ms-5 mt-3 fs-4">$50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card rounded-0">
+                  <img class="cardImg" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling6.jpg.webp" alt=""/>
+                  <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+                    <label class="fs-4 fw-bold">Moon dance</label>
+                    <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+                    <div class="d-flex flex-row text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around align-items-center">
+                      <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                      <p class="text-danger ms-5 mt-3 fs-4">$50</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item ">
+              <div class="container d-flex flex-row justify-content-around align-items-center pb-5">
+                <div class="card rounded-0">
+                  <img class="cardImg" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling2.jpg.webp" alt=""/>
+                  <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+                    <label class="fs-4 fw-bold">Moon dance</label>
+                    <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+                    <div class="d-flex flex-row text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around align-items-center">
+                      <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                      <p class="text-danger ms-5 mt-3 fs-4">$50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card rounded-0">
+                  <img class="cardImg" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling3.jpg.webp" alt=""/>
+                  <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+                    <label class="fs-4 fw-bold">Moon dance</label>
+                    <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+                    <div class="d-flex flex-row text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around align-items-center">
+                      <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                      <p class="text-danger ms-5 mt-3 fs-4">$50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card rounded-0">
+                  <img class="cardImg" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling1.jpg.webp" alt=""/>
+                  <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+                    <label class="fs-4 fw-bold">Moon dance</label>
+                    <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+                    <div class="d-flex flex-row text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around align-items-center">
+                      <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                      <p class="text-danger ms-5 mt-3 fs-4">$50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card rounded-0">
+                  <img  class="cardImg" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling4.jpg.webp" alt=""/>
+                  <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+                    <label class="fs-4 fw-bold">Moon dance</label>
+                    <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+                    <div class="d-flex flex-row text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around align-items-center">
+                      <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                      <p class="text-danger ms-5 mt-3 fs-4">$50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card rounded-0">
+                  <img class="cardImg" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling6.jpg.webp" alt=""/>
+                  <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+                    <label class="fs-4 fw-bold">Moon dance</label>
+                    <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+                    <div class="d-flex flex-row text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around align-items-center">
+                      <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                      <p class="text-danger ms-5 mt-3 fs-4">$50</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDiv" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDiv" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+
+        </div>
+      </div>
+      <!-- small Crousel -->
+      <div class="fluid">
+        <div class="container d-flex flex-row justify-content-between pt-5 pb-5">
+          <div class="container--left col-8">
+            <div class="d-flex flex-row justify-content-between align-item-center">
+              <h2>Featured This Week</h2>
+              <button class="bg-light border-bottom border-0 bg-white">View All</button>
+            </div>
+            <div class="pt-4">
+              <div id="carouselJoker" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active ">
+                    <div class="d-flex flex-row red justify-content-around align-items-center">
+                      <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best-books1.jpg.webp" alt=""/>
+                      <div class="d-flex flex-column text-white">
+                        <h3 class="fs-1 fw-light">The Range of Dragons</h3>
+                        <label class="fw-lighter fs-5">By Evan Winter</label>
+                        <p class="fw-bold fs-3">$50.00</p>
+                        <div class="d-flex flex-row fw-bold p-2">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <label class="fw-lighter">Review (11)</label>
+                        </div>
+                        <button class="rounded-pill border p-1 pt-3 pb-3 red border-white text-white btn">View Details</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <div class="d-flex flex-row red justify-content-around align-items-center">
+                      <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best-books1.jpg.webp" alt=""/>
+                      <div class="d-flex flex-column text-white">
+                        <h3 class="fs-1 fw-light">The Range of Dragons</h3>
+                        <label class="fw-lighter fs-5">By Evan Winter</label>
+                        <p class="fw-bold fs-3">$50.00</p>
+                        <div class="d-flex flex-row fw-boldp-2">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <label class="fw-lighter">Review (11)</label>
+                        </div>
+                        <button class="rounded-pill border p-1 pt-3 pb-3 red border-white text-white btn">View Details</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <div class="d-flex flex-row red justify-content-around align-items-center">
+                      <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best-books1.jpg.webp" alt=""/>
+                      <div class="d-flex flex-column text-white">
+                        <h3 class="fs-1 fw-light">The Range of Dragons</h3>
+                        <label class="fw-lighter fs-5">By Evan Winter</label>
+                        <p class="fw-bold fs-3">$50.00</p>
+                        <div class="d-flex flex-row fw-bold p-2">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <label class="fw-lighter">Review (11)</label>
+                        </div>
+                        <button class="rounded-pill border p-1 pt-3 pb-3 red border-white text-white btn">View Details</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselJoker" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselJoker" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/ad.jpg.webp" alt="" class="joker--img"/>
+        </div>
+      </div>
+      <!-- buttons -->
+      <div class="fluid">
+        <div class="container d-flex flex-row justify-content-between align-items-center pt-5 pb-5">
+          <p class="fs-2 fw-bolder">Latest Published Items</p>
+          <div>
+            <button class="border red text-white p-2 pe-4 ps-4 rounded-pill">All</button>
+            <button class="border border-secondary bg-white text-secondary p-2 pe-3 ps-3 rounded-pill">Horror</button>
+            <button class="border border-secondary bg-white text-secondary p-2 pe-3 ps-3 rounded-pill">Thriller</button>
+            <button class="border border-secondary bg-white text-secondary p-2 pe-3 ps-3 rounded-pill">Science Fiction</button>
+            <button class="border border-secondary bg-white text-secondary p-2 pe-3 ps-3 rounded-pill">History</button>
+          </div>
+        </div>
+      </div>
+      <!-- cards -->
+      <div class="fluid">
+        <div class="container d-flex flex-row justify-content-around align-items-center pb-5">
+          <div class="card rounded-0 border-2 card--div">
+            <img class="imgCard" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling2.jpg.webp" alt=""/>
+            <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+              <label class="fs-4 fw-bold">Moon dance</label>
+              <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+              <div class="d-flex flex-row text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <div class="d-flex flex-row justify-content-around align-items-center">
+                <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                <p class="text-danger ms-1 mt-3 fs-4">$50</p>
+              </div>
+            </div>
+          </div>
+          <div class="card rounded-0 card--div">
+            <img class="imgCard" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling3.jpg.webp" alt=""/>
+            <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+              <label class="fs-4 fw-bold">Moon dance</label>
+              <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+              <div class="d-flex flex-row text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <div class="d-flex flex-row justify-content-around align-items-center">
+                <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                <p class="text-danger ms-1 mt-3 fs-4">$50</p>
+              </div>
+            </div>
+          </div>
+          <div class="card rounded-0 card--div">
+            <img class="imgCard" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling1.jpg.webp" alt=""/>
+            <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+              <label class="fs-4 fw-bold">Moon dance</label>
+              <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+              <div class="d-flex flex-row text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <div class="d-flex flex-row justify-content-around align-items-center">
+                <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                <p class="text-danger ms-1 mt-3 fs-4">$50</p>
+              </div>
+            </div>
+          </div>
+          <div class="card rounded-0 card--div">
+            <img  class="imgCard" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling4.jpg.webp" alt=""/>
+            <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+              <label class="fs-4 fw-bold">Moon dance</label>
+              <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+              <div class="d-flex flex-row text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <div class="d-flex flex-row justify-content-around align-items-center">
+                <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                <p class="text-danger ms-1 mt-3 fs-4">$50</p>
+              </div>
+            </div>
+          </div>
+          <div class="card rounded-0 card--div">
+            <img class="imgCard" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling6.jpg.webp" alt=""/>
+            <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+              <label class="fs-4 fw-bold">Moon dance</label>
+              <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+              <div class="d-flex flex-row text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <div class="d-flex flex-row justify-content-around align-items-center">
+                <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                <p class="text-danger ms-1 mt-3 fs-4">$50</p>
+              </div>
+            </div>
+          </div>
+          <div class="card rounded-0 card--div">
+            <img class="imgCard" src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling9.jpg.webp" alt=""/>
+            <div class="d-flex flex-column justify-content-around align-items-start ps-2">
+              <label class="fs-4 fw-bold">Moon dance</label>
+              <label class="fs-6 fw-lighter text-secondary">J.R Rain</label>
+              <div class="d-flex flex-row text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <div class="d-flex flex-row justify-content-around align-items-center">
+                <label class="text-secondary fw-light">(<span class="fw-light review--color">120</span> Review)</label>
+                <p class="text-danger ms-1 mt-3 fs-4">$50</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- two cards -->
+      <div class="fluid d-flex justify-content-center align-items-center">
+        <button class="border bg-white text-danger border-danger rounded-pill p-3 ps-5 pe-5">Browse More</button>
+      </div>
+      <div class="fluid pt-5 pb-5">
+        <div class="container d-flex flex-row justify-content-between align-items-center">
+          <div class="card rounded-0 bg--image d-flex flex-row justify-content-around align-items-center" style="background-image:url('https://preview.colorlib.com/theme/abcbook/assets/img/gallery/wants-bg1.jpg.webp')">
+            <p class="text-white fs-2">The History <br/>of Phipino</p>
+            <button class="border-0 rounded-pill text-white ps-4 pe-4 p-2 red">View Details</button>
+          </div>
+          <div class="card rounded-0 bg--image d-flex flex-row justify-content-around align-items-center" style="background-image:url('https://preview.colorlib.com/theme/abcbook/assets/img/gallery/wants-bg2.jpg.webp')">
+            <p class="text-white fs-2">Wilma Mumdya</p>
+            <button  class="border-0 rounded-pill text-white ps-4 pe-4 p-2 red">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="fluid pb-5">
+        <div class="container bg__image d-flex flex-column align-items-center justify-content-center">
+          <p class="fw-bolder fs-1 text-white">Join Newsletter</p>
+          <p class="ps-5 pe-5 fw-light text-secondary">Lorem ipsum dolor hic ipsa ab voluptatem neque, eum fugiat aspernatur architecto nobis labore incidunt quisquam ratione dolore, explicabo eos deleniti commodi?</p>
+          <div class="d-flex flex-row">
+            <input placeholder="Enter Your Email" class="bg-white rounded-pill p-3 border-0 me-2"/>
+            <button class="border-0 rounded-pill text-white pe-4 ps-4 red">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer Section  -->
+    <footer>
+      <div class="fluid pt-5 pb-5 background">
+        <div class="container d-flex flex-row footer--upper">
+          <div class="d-flex flex-column col">
+            <img class=" border-0 pb-2 p-0" src="https://preview.colorlib.com/theme/abcbook/assets/img/logo/logo2_footer.png.webp" alt=""/>
+            <label class="pb-2 text-secondary">Lorem ips Voluptate harum uia optio debitis mollitia fuga possimus nulla quas alias, ipsum consequuntur! Molestias, iste!</label>
+            <div class="d-flex flex-row">
+              <div class="border border-secondary rounded-circle m-1 icon--div d-flex align-items-center justify-content-center text-secondary"><i class="bi bi-facebook"></i></div>
+              <div class="border border-secondary rounded-circle m-1 icon--div d-flex align-items-center justify-content-center text-secondary"><i class="bi bi-instagram"></i></div>
+              <div class="border border-secondary rounded-circle m-1 icon--div d-flex align-items-center justify-content-center text-secondary"><i class="bi bi-linkedin"></i></div>
+              <div class="border border-secondary rounded-circle m-1 icon--div d-flex align-items-center justify-content-center text-secondary"><i class="bi bi-youtube"></i></div>
+            </div>
+          </div>
+          <div class="d-flex flex-column col ps-5">
+            <p class="fw-bolder">Book Category</p>
+            <label class="pt-2 fw-light text-secondary">History</label>
+            <label class="pt-2 fw-light text-secondary">Horror-Thriller</label>
+            <label class="pt-2 fw-light text-secondary">Love Stories</label>
+            <label class="pt-2 fw-light text-secondary">Science Fiction</label>
+            <label class="pt-2 fw-light text-secondary">Business</label>
+          </div>
+          <div class="d-flex flex-column col ">
+            <p class="fw-bolder">About</p>
+            <label class="pt-2 fw-light text-secondary">Biography</label>
+            <label class="pt-2 fw-light text-secondary">Astrology</label>
+            <label class="pt-2 fw-light text-secondary">Digital Marketing</label>
+            <label class="pt-2 fw-light text-secondary">Software Development</label>
+            <label class="pt-2 fw-light text-secondary">Ecommerce</label>
+          </div>
+          <div class="d-flex flex-column col ">
+            <p class="fw-bolder">Site Map</p>
+            <label class="pt-2 fw-light text-secondary">Home</label>
+            <label class="pt-2 fw-light text-secondary">About Us</label>
+            <label class="pt-2 fw-light text-secondary">FAQs</label>
+            <label class="pt-2 fw-light text-secondary">Blog</label>
+            <label class="pt-2 fw-light text-secondary">Contact</label>
+          </div>
+        </div>
+      </div>
+      <div class="fluid pt-5 background">
+        <div class="container d-flex justify-content-center align-items-center">
+          <span>Copyright ©2022 All rights reserved | This template is made with <i class="bi bi-heart-fill"></i> by Colorlib</span>
+        </div>
+      </div>
+  </footer>
+</body>
+
+</html>

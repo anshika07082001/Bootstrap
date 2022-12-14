@@ -1,0 +1,77 @@
+.bi-cart {
+    font-size: 30px !important;
+}
+
+.badge--span {
+    font-size: 0.7rem;
+}
+
+.div--crousel {
+    min-height: 400px;
+    background: rgb(241, 232, 233);
+}
+
+.imgDiv {
+    min-height: 500px;
+}
+
+.cardImg {
+    height: 230px;
+    width: 200px;
+}
+
+.imgCard {
+    height: 230px;
+    width: 160px;
+}
+
+.card--div {
+    min-width: 160px;
+}
+
+.review--color {
+    color: orange;
+    font-size: 0.9rem;
+}
+
+.container--left {
+    min-width: 820px;
+}
+
+.joker--img {
+    height: 400px;
+    width: 240px;
+    margin-left: 10px;
+}
+
+.bg--image {
+    min-height: 180px;
+    width: 540px;
+}
+
+.bg__image {
+    background-image: url('https://preview.colorlib.com/theme/abcbook/assets/img/gallery/section-bg1.jpg.webp');
+    background-size: 100% 100%;
+    min-height: 300px;
+}
+
+.footer--upper {
+    min-height: 200px;
+}
+
+.icon--div {
+    height: 50px;
+    width: 50px;
+}
+
+.background {
+    background: rgb(240, 235, 235) !important;
+}
+
+.red {
+    background: red;
+}
+
+.btn {
+    max-width: 150px;
+}

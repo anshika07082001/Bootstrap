@@ -1,0 +1,27 @@
+.profile {
+    background-image: url('https://newprofilepic2.photo-cdn.net//assets/images/article/profile.jpg');
+    background-size: 100% 100%;
+    min-height: 50px;
+    min-width: 50px;
+}
+
+.bg--grey {
+    background: rgb(223 223 223);
+}
+
+.profile--img {
+    max-height: 80px;
+    max-width: 80px;
+}
+
+.add--post {
+    min-height: 200px;
+    min-width: 150px;
+}
+
+.bg--img {
+    background-image: url('https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg');
+    background-size: 100% 100%;
+    min-height: 200px;
+    min-width: 150px;
+}

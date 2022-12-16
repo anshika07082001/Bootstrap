@@ -1,5 +1,5 @@
 .profile {
-    background-image: url('https://newprofilepic2.photo-cdn.net//assets/images/article/profile.jpg');
+    background-image: url('https://img.freepik.com/free-photo/funny-astonished-red-haired-european-female-raising-eyebrows-expressing-surprise-keeping-hand-near-ear-trying-listen-gossips_176532-11435.jpg?auto=format&h=200');
     background-size: 100% 100%;
     min-height: 50px;
     min-width: 50px;
@@ -7,6 +7,10 @@
 
 .bg--grey {
     background: rgb(223 223 223);
+}
+
+.text--grey {
+    color:rgb(168, 166, 166);
 }
 
 .profile--img {
@@ -24,4 +28,35 @@
     background-size: 100% 100%;
     min-height: 200px;
     min-width: 150px;
+}
+
+@media screen and (max-width:1450px) {
+    .bg--img {
+        min-width: 100px;
+        min-height: 150px;
+    }
+    .add--post {
+        min-height: 150px;
+        min-width: 100px;
+    }
+}
+@media screen and (max-width:500px) {
+    .inputDiv {
+        display: none !important;
+    }
+    .bg--img {
+        min-width: 50px;
+        min-height: 100px;
+        font-size: 0.7rem;
+    }
+    .add--post {
+        min-height: 100px;
+        min-width: 50px;
+        font-size: 0.7rem;
+    }
+    .add--post div{
+        height: 20px;
+        width: 20px;
+        font-size: 0.9rem !important;
+    }
 }
